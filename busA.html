@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bus A - The Speedy Millisecond Express</title>
+    <!-- NES.css for retro styling -->
+    <link
+      href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: #f5f5f5;
+        font-family: "Press Start 2P", cursive;
+        padding: 20px;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      h1,
+      .title {
+        text-align: center;
+        color: #ff69b4;
+        font-weight: bold;
+      }
+      table {
+        width: 100%;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container nes-container with-title">
+      <p class="title">Bus A - The Speedy Millisecond Express</p>
+      <p><strong>Start Time:</strong> 1234 ms</p>
+      <p><strong>End Time:</strong> 5678 ms</p>
+
+      <table class="nes-table is-bordered">
+        <thead>
+          <tr>
+            <th>Stop</th>
+            <th>Timing (ms)</th>
+            <th>Comment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Stop Alpha</td>
+            <td>101 ms</td>
+            <td>Blink and you'll miss it!</td>
+          </tr>
+          <tr>
+            <td>Stop Beta</td>
+            <td>202 ms</td>
+            <td>No time for a coffee break.</td>
+          </tr>
+          <tr>
+            <td>Stop Gamma</td>
+            <td>303 ms</td>
+            <td>Time flies—literally!</td>
+          </tr>
+          <tr>
+            <td>Stop Delta</td>
+            <td>404 ms</td>
+            <td>Error: Stop not found.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="text-align: center; margin-top: 20px">
+        <button class="nes-btn" onclick="window.history.back()">Back</button>
+      </div>
+      <h1>
+        BTW, we forget to tell the buses are not available. so better luck next
+        time :)
+      </h1>
+    </div>
+  </body>
+</html>

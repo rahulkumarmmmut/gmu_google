@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GMU Transportation Website</title>
+  <!-- Link to the external CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Link to the external JavaScript (with "defer" to ensure the DOM is loaded first) -->
+  <script src="scripts.js" defer></script>
+  <link
+  href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>GMU Transportation Website</h1>
+  </header>
+
+  <!-- Main Container -->
+  <div class="container">
+    
+    <!-- Left Section: Bus List -->
+    <div class="left-section">
+      <ul>
+        <li>
+          <strong>Sandy Creek</strong>
+          <button onclick="openBusSchedule('busC.html')">Show Timings</button>
+        </li>
+        <li>
+          <strong>West Campus</strong>
+          <button onclick="openBusSchedule('busA.html')">Show Timings</button>
+        </li>
+        <li>
+          <strong>Fairfax Square</strong>
+          <button onclick="openBusSchedule('busB.html')">Show Timings</button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right Section: Register and Login -->
+    <div class="right-section">
+
+      <!-- Register Form (top-right) -->
+      <div class="register-section">
+        <h2>Register</h2>
+        <form id="registerForm">
+          <label for="registerUsername">
+            Username (digits only, at least 15 characters)
+          </label>
+          <input 
+            type="text" 
+            id="registerUsername" 
+            name="registerUsername" 
+            required
+          >
+
+          <label for="registerPassword">
+            Password (at least 25 characters)
+          </label>
+          <input 
+            type="password" 
+            id="registerPassword" 
+            name="registerPassword" 
+            required
+          >
+
+          <button type="submit">Register</button>
+        </form>
+      </div>
+
+      <!-- Login Form (bottom-right) -->
+      <div class="login-section">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <label for="loginUsername">Username</label>
+          <input 
+            type="text" 
+            id="loginUsername" 
+            name="loginUsername" 
+            required
+          >
+
+          <label for="loginPassword">Password</label>
+          <input 
+            type="password" 
+            id="loginPassword" 
+            name="loginPassword" 
+            required
+          >
+
+          <button type="submit">Login</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

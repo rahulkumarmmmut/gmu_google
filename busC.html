@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bus C - The Millisecond Menace</title>
+    <!-- NES.css for retro styling -->
+    <link
+      href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: #f5f5f5;
+        font-family: "Press Start 2P", cursive;
+        padding: 20px;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      h1,
+      .title {
+        text-align: center;
+        color: #ff69b4;
+        font-weight: bold;
+      }
+      table {
+        width: 100%;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container nes-container with-title">
+      <p class="title">Bus C - The Millisecond Menace</p>
+      <p><strong>Start Time:</strong> 2468 ms</p>
+      <p><strong>End Time:</strong> 1357 ms</p>
+
+      <table class="nes-table is-bordered">
+        <thead>
+          <tr>
+            <th>Stop</th>
+            <th>Timing (ms)</th>
+            <th>Quip</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Stop Iota</td>
+            <td>555 ms</td>
+            <td>Faster than you can say "milliseconds".</td>
+          </tr>
+          <tr>
+            <td>Stop Kappa</td>
+            <td>666 ms</td>
+            <td>Not the number you expected!</td>
+          </tr>
+          <tr>
+            <td>Stop Lambda</td>
+            <td>777 ms</td>
+            <td>Lucky timing or just random luck?</td>
+          </tr>
+          <tr>
+            <td>Stop Mu</td>
+            <td>888 ms</td>
+            <td>So digit-al, it's practically a pun.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="text-align: center; margin-top: 20px">
+        <button class="nes-btn" onclick="window.history.back()">Back</button>
+      </div>
+
+      <h1>
+        BTW, we forget to tell the buses are not available. so better luck next
+        time :)
+      </h1>
+    </div>
+  </body>
+</html>

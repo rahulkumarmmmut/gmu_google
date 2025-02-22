@@ -1,0 +1,110 @@
+/* Reset some default styles (optional) */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and basic fonts */
+  body {
+    font-family: 'Press Start 2P';
+    background-color: #ffffff;
+  }
+  
+  /* Header styles */
+  header {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    color: pink;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Main container with two sections side by side */
+  .container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  /* Left Section styles (bus list) */
+  .left-section {
+    flex: 1;
+    margin-left: 20px;
+    padding: 20px;
+  }
+  
+  .left-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .left-section li {
+    margin-bottom: 15px;
+  }
+  
+  .left-section button {
+    margin-left: 10px;
+  }
+  
+  /* Right Section styles (register & login forms) */
+  .right-section {
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+  
+    /* Helps place forms vertically stacked */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* Common box style for register & login forms */
+  .register-section,
+  .login-section {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+  }
+  
+  .register-section h2,
+  .login-section h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Form elements */
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: pink;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #ffcccc;
+  }

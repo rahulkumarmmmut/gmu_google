@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bus B - The Chrono Comedian</title>
+    <!-- NES.css for retro styling -->
+    <link
+      href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: #f5f5f5;
+        font-family: "Press Start 2P", cursive;
+        padding: 20px;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      h1,
+      .title {
+        text-align: center;
+        color: #ff69b4;
+        font-weight: bold;
+      }
+      table {
+        width: 100%;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container nes-container with-title">
+      <p class="title">Bus B - The Chrono Comedian</p>
+      <p><strong>Start Time:</strong> 4321 ms</p>
+      <p><strong>End Time:</strong> 8765 ms</p>
+
+      <table class="nes-table is-bordered">
+        <thead>
+          <tr>
+            <th>Stop</th>
+            <th>Timing (ms)</th>
+            <th>Joke</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Stop One</td>
+            <td>111 ms</td>
+            <td>Faster than a snail on a skateboard.</td>
+          </tr>
+          <tr>
+            <td>Stop Two</td>
+            <td>222 ms</td>
+            <td>Milliseconds? More like milli-silly-seconds.</td>
+          </tr>
+          <tr>
+            <td>Stop Three</td>
+            <td>333 ms</td>
+            <td>Time's so short, it's practically a punchline!</td>
+          </tr>
+          <tr>
+            <td>Stop Four</td>
+            <td>444 ms</td>
+            <td>Error 404: Sense of time not found.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="text-align: center; margin-top: 20px">
+        <button class="nes-btn" onclick="window.history.back()">Back</button>
+      </div>
+      <h1>
+        BTW, we forget to tell the buses are not available. so better luck next
+        time :)
+      </h1>
+    </div>
+  </body>
+</html>
